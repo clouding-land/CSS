@@ -1,0 +1,103 @@
+h2{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    font-weight: 400px;
+}
+p{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: grey;
+    overflow: hidden;
+    float:center;
+    width:400px;
+    margin-left: 480px;
+}
+
+.card {
+    background-color: hsl(0, 0%, 100%);
+    border: 1px solid hsl(0, 0%, 85.1%);
+    border-radius: 15px;
+    box-shadow: 0 2px 4px hsla(0, 0%, 0%, 0.1);
+    margin: 2em auto;
+    max-width: 18.75em;
+    overflow: hidden;
+  }
+  
+  .card-content {
+    
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:15px;
+  }
+  
+  .img {
+    display: block;
+    position: relative;
+  }
+  
+  .img::before {
+    background-color: hsl(0, 0%, 93.3%);
+    border: 1px dashed hsl(0, 0%, 66.7%);
+    display: block;
+    height: 100%;
+    border-radius: 4px;
+    content: " ";
+    position: absolute;
+    width: 100%;
+  }
+  
+  .img::after {
+    content: attr(alt);
+    font-weight: bold;
+    position: absolute;
+    height: 100%;
+    left: 0px;
+    text-align: center;
+    top: 1px;
+    width: 100%;
+  }
+  
+   .img[alt] {
+    text-align: center;
+    font-weight: bold;
+    color: hsl(0, 0%, 60%);
+   }
+  
+  @media screen and (min-width: 48em ) {
+    .flex {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0.6em;
+    }
+  
+    .container {
+      width: 80%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+.logo{
+    height: 30px;
+    width: 60px;
+    margin:5px;
+  }
+
+  button{
+    text-align: center;
+    margin-left: 650px;
+    padding:12px;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #FF0032;
+    border-radius:7px ;
+    color:white;
+  }
+
+  button:hover{
+    background-color:white;
+    color:#FF0032
+  }
+  
