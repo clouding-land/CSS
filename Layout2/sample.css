@@ -1,0 +1,36 @@
+.wrapper{
+    margin:50px;
+    font-size: 25px;
+    font-weight: 500;
+    color:gray;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header{
+    background-color: yellow;
+    align-items: center;
+    padding:20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    margin-top: 20px;
+    color: black;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(2,610px);
+    grid-template-rows: repeat(1,480px);
+    gap:20px;
+    place-content: center;
+   
+}
+.container > *{
+    margin-top: 20px;
+    padding:10px;
+}
+
+@media screen and (max-width:1000px) and (min-width:500px){
+    .container{
+        grid-template-columns: repeat(1,470px);
+        grid-template-rows: repeat(2,200px);
+    }
+    
+}
