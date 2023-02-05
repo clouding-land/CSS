@@ -1,0 +1,64 @@
+body{
+    background-color: bisque;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,350px);
+    grid-template-rows: repeat(3,200px);
+    gap:20px;
+    place-content: center;
+   
+}
+.container > *{
+    margin-top: 20px;
+    padding:10px;
+}
+
+.card {
+    background-color: hsl(0, 0%, 100%);
+    border: 1px solid hsl(0, 0%, 85.1%);
+    border-radius: 15px;
+    box-shadow: 0 2px 4px hsla(0, 0%, 0%, 0.1);
+    margin: 2em auto;
+    overflow: hidden;
+    padding: 10px;
+  }
+  
+  .card-content {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:15px;
+    margin-top: 0;
+  }
+  .card-heading{
+    display:flex;
+    justify-content: space-between;
+    margin-left:20px;
+    margin-right: 20px;
+    font-size: 20px;
+    height: 60px;
+  }
+
+  .amount{
+    color: #B99B6B;
+    font-weight: bold;
+  }
+  p{
+    color: gray;
+  }
+
+  @media screen and (max-width:1000px) and (min-width:500px){
+    .container{
+        grid-template-columns: repeat(2,350px);
+        grid-template-rows: repeat(5,200px);
+    }
+  }
+
+  @media screen and (max-width:550px){
+    .container{
+        grid-template-columns: repeat(1,350px);
+        grid-template-rows: repeat(9,200px);
+    }
+  }
+ 
