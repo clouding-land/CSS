@@ -1,0 +1,89 @@
+h1{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 45px;
+    font-weight: bold;
+}
+p{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: grey;
+    overflow: hidden;
+    float:center;
+    width:730px;
+    margin-left: 200px;
+    line-height: 20px;
+}
+h2{
+    font-size: 30px;
+    font-weight: lighter;
+  }
+h6{
+    font-size: 20px;
+    color: orange;
+    font-weight: 400;
+    margin-top: 2px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1100px;
+    grid-template-rows: 200px 350px;
+    gap:20px;
+    place-content: center;
+}
+
+.sm-container{
+    display: grid;
+    grid-template-columns: repeat(3,350px);
+    gap:20px;
+}
+.card{
+    margin:10px;
+}
+
+.card-content {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .img{
+    display: block;
+    position: relative;
+  }
+
+@media screen and (max-width:1000px) and (min-width:500px){
+    .container{
+        grid-template-columns: 680px;
+        grid-template-rows: 230px;
+        place-content: center;
+        
+    }
+    .sm-container{
+        grid-template-columns: repeat(2,330px);
+        grid-template-rows: repeat(2,400px);
+        row-gap: 20px;
+    }
+    p{
+        margin-left: 60px;
+        width:600px;
+    }
+}
+@media screen and (max-width:550px){
+    .container{
+        grid-template-columns: 400px;
+        grid-template-rows: 260px;
+        place-content: center;
+    }
+    .sm-container{
+        grid-template-columns: repeat(1,400px);
+        grid-template-rows: repeat(3,400px);
+    }
+    p{
+        margin-left: 10px;
+        width:350px;
+    }
+    .img{
+        width:330px;
+    }
+}
